@@ -1,0 +1,26 @@
+# This is for the Hombrew stuff using "linixify" to get GNU commands.
+# First follow the instructions on https://brew.sh/ to install Homebrew.
+# Then follow the instructions in https://github.com/fabiomaia/linuxify
+source ~/.linuxify
+
+# This commented out PS1 is what I used to have on Ubuntu before 15.10.
+#export PS1="\u@\h:\w\$ "
+export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+export CLICOLOR=1
+
+# Aliases from Ubuntu's ~/.bashrc file
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls --color'
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Don't put duplicate lines or lines starting with space in the history.
+HISTCONTROL=ignoreboth
+
+# Cool thing that shows the weather in the terminal with color and stuff
+# From https://github.com/chubin/wttr.in
+alias weather='curl wttr.in/~"Name of City"'
