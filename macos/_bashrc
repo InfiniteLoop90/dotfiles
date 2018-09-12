@@ -6,7 +6,12 @@ source ~/.linuxify
 # This commented out PS1 is what I used to have on Ubuntu before 15.10.
 #export PS1="\u@\h:\w\$ "
 export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+
+# Enabling color in the terminal
 export CLICOLOR=1
+
+# Setting the default editor to nano
+export EDITOR=nano
 
 # Aliases from Ubuntu's ~/.bashrc file
 alias egrep='egrep --color=auto'
