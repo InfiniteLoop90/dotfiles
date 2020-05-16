@@ -28,4 +28,11 @@ HISTCONTROL=ignoreboth
 
 # Cool thing that shows the weather in the terminal with color and stuff
 # From https://github.com/chubin/wttr.in
-alias weather='curl wttr.in/~"Name of City"'
+alias weather='curl wttr.in/~"Sauk City"'
+
+# Defaulting to Java 11
+# I installed this through the Brew to get AdoptOpenJDK via
+#   brew tap adoptopenjdk/openjdk
+#   brew cask info adoptopenjdk
+#   brew cask install adoptopenjdk11
+export JAVA_HOME=`/usr/libexec/java_home -v 11.0`
