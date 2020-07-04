@@ -36,3 +36,9 @@ alias weather='curl wttr.in/~"Sauk City"'
 #   brew cask info adoptopenjdk
 #   brew cask install adoptopenjdk11
 export JAVA_HOME=`/usr/libexec/java_home -v 11.0`
+
+# Adding Ruby to the path, which was installed via `brew install ruby`
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Adding Ruby gem executable direcory to the path for things like mdl installed via `gem install mdl`
+export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
