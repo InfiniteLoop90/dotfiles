@@ -1,0 +1,2 @@
+# Don't execute commands automatically if there's a new line at the end. From https://www.reddit.com/r/commandline/comments/jfh6it/dont_copy_paste_into_a_shell/g9kfbmh
+set enable-bracketed-paste on
