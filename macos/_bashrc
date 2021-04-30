@@ -1,7 +1,7 @@
-# This is for the Homebrew stuff using "linuxify" to get GNU commands.
+# This is for sourcing the Homebrew stuff using "linuxify" to get GNU commands.
 # First follow the instructions on https://brew.sh/ to install Homebrew.
 # Then follow the instructions in https://github.com/fabiomaia/linuxify
-source ~/.linuxify
+. ~/.linuxify
 
 # This commented out PS1 is what I used to have on Ubuntu before 15.10.
 #export PS1="\u@\h:\w\$ "
